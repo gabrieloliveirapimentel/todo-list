@@ -27,8 +27,7 @@ export function ToDo() {
             {
                 id: listItems.length + 1,
                 content: item,
-                isDone: false,
-                createdAt: new Date()
+                isDone: false
             }
         ])
 
@@ -37,8 +36,7 @@ export function ToDo() {
             {
                 id: listItems.length + 1,
                 content: item,
-                isDone: false,
-                createdAt: new Date()
+                isDone: false
             }
         ]))
     }
