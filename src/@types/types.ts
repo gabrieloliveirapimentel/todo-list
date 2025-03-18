@@ -2,7 +2,6 @@ export interface ListItemProps {
     id: number
     content: string
     isDone: boolean
-    createdAt: Date
 }
 
 export interface CardProps {
