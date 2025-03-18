@@ -16,11 +16,7 @@ export function Card({ id, isDone, content, SetItemIsDone, DeleteItem}: CardProp
                     </button>
                     <Text isDone={isDone}>{content}</Text>
                 </Content>
-                <div>
-                    <button onClick={() => DeleteItem(id)}>
-                        <LuTrash2 size={20} color={theme.red} />
-                    </button>
-                </div>
+                {isDone && <button onClick={() => DeleteItem(id)}><LuTrash2 size={20} color={theme.red} /></button>}
             </Container>
     )
 }
